@@ -1,0 +1,49 @@
+.transparent-header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header-text {
+  color: white;
+}
+
+.cool {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #007BFF; 
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.cool:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .header-toolbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .header-text {
+    font-size: 20px;
+  }
+
+  .cool {
+    margin-top: 10px;
+  }
+}

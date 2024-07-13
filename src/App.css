@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.color1 { color: #2098d8; }
+.color2 { color: #ef6ddd; }
+.color3 { color: #f2b18a; }
+.color4 { color: #f4eb93; }
+.color5 { color: #bcefed; }
+
+.hero {
+  height: 100vh;
+  background: url('img.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(5px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  color: #2098d8; 
+}
+
+.hero p {
+  color: #ef6ddd;
+}
+
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f4eb93;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.next-button:hover {
+  background-color: #f2b18a;
+}
+
+.programs-section {
+  padding: 2em;
+  background-color: #bcefed;
+  text-align: center;
+}
+
+.programs-section h2 {
+  color: white;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+
+.card {
+  max-width: 300px;
+  margin: 1em;
+  background-color: #f4eb93;
+}
+
+.card-media {
+  height: 140px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-button {
+  background-color: #2098d8;
+  color: white;
+  margin-top: 10px;
+}
+
+.card-button:hover {
+  background-color: #ef6ddd;
+}
+
+.transparent-header {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.header-text {
+  color: white;
+}
+
+.transparent-header .MuiButton-root {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    background-size: cover;
+  }
+
+  .hero-content {
+    padding: 1em;
+  }
+
+  .next-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .programs-section {
+    padding: 1em;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 1em 0;
+  }
+}

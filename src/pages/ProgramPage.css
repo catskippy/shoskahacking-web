@@ -1,0 +1,31 @@
+.program-details {
+    padding: 2em;
+    background-color: #bcefed;
+    text-align: center;
+  }
+  
+  .program-title {
+    color: #2098d8;
+    margin-bottom: 1em;
+  }
+  
+  .program-description {
+    color: #ef6ddd;
+    margin-bottom: 1em;
+  }
+  
+  .download-button {
+    background-color: #2098d8;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .download-button:hover {
+    background-color: #ef6ddd;
+  }
+  
+  .program-instructions {
+    color: #2098d8;
+    margin-top: 1em;
+  }
+  
