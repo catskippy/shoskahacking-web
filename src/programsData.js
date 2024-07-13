@@ -13,7 +13,7 @@ const programsData = [
     icon: 'https://i.imgur.com/90ij9De.png',
     description: 'Данная программа позволит взломать Майнкрафт сервер Tigerya, которым владеет Серый кот!',
     instructions: '1) скачайте файл и Node.js\n2) перекиньте его на рабочий стол (или туда, где вы его запустите)\n3) запустите файл или через командную стройку напишите:\ncd "папка, где файл"\nnode exploit-2024-06-23.js\n4) если есть вопросы, вам суда - https://discord.gg/sfXEdrpFDz',
-    downloadLink: 'https://example.com/download2'
+    downloadLink: 'https://catskippy.github.io/shoskahacking/exploit-2024_06_23.js'
   },
   {
     id: '3',
